@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mt-header title="weGame" :fixed='true'>
+    <mt-header title="weGame" :fixed='true' style="height:4rem">
       <!-- <router-link to="/" slot="left">
         <mt-button icon="back">返回</mt-button>
       </router-link> -->
@@ -10,7 +10,7 @@
 
     <router-view></router-view>
     <div style="height:55px"></div>
-    <mt-tabbar v-model="selected" :fixed='true'>
+    <mt-tabbar v-model="selected" :fixed='true' style="height:4rem">
       <mt-tab-item id="tab1" exact active-class="is-selected">
         <img slot="icon" src="./assets/c1.jpg">
         <router-link to="/" exact style='color:#242424;textDecoration: none'>首页</router-link>

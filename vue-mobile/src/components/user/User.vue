@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <div class='user_bg' >
       <img width='100' height='100' src="../../assets/lion.jpg" alt="lion" style="verticalAlign:middle"/>
       <span style='verticalAlign:middle;lineHeight:100px;fontSize:30px'>{{list.name}}</span>

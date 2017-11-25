@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>选购您的商品~</h1>
-    <!-- {{news}} -->
     <ul>
        <li style='lineHeight:40px;fontSize:20px;listStyle:none;margin:50px 0 20px' v-for="list in lists" :key="list.name">
          <img v-lazy='list.img' alt="list.name" width='300' height="288"/>
@@ -17,7 +16,7 @@
 </template>
 
 <script>
-import {mapGetters,mapActions} from "Vuex";
+import {mapGetters,mapActions } from "Vuex";
 
 export default {
   data() {
@@ -31,8 +30,8 @@ export default {
   methods: {
     ...mapActions(['newsData']),
     addToCarts(e){
-      // console.log(e.target)      
-      // console.log(e.target.getAttribute('data'))
+      // console.log(e.target)
+      console.log(e.target.getAttribute('data'))
     },
     getData() {
       this.$http.get("http://localhost:3000/product/list").then(res => {

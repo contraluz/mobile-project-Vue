@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state:{
         login: false,
-        news:[]
+        news:[],
+        goodsList:["乐事","大宝"]
     },
     getters:{
         login : state=>{
